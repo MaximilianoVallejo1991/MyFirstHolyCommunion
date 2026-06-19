@@ -1,0 +1,23 @@
+:root {
+  /* Palette — ivory predominant */
+  --color-ivory: #FDF5E6;
+  --color-white: #FFFFFF;
+  --color-gold: #CA8A04;
+  --color-gold-hover: #B07D04;
+  --color-purple: #7C3AED;
+  --color-purple-light: #A78BFA;
+  --color-text-primary: #2D1B00;
+  --color-text-muted: #8B7355;
+
+  /* Fonts */
+  --font-great-vibes: 'Great Vibes', cursive;
+  --font-cormorant: 'Cormorant Infant', serif;
+
+  /* Shadows */
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.08);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-gold: 0 8px 24px rgba(202, 138, 4, 0.3);
+
+  /* Radius */
+  --radius-card: 1rem;
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Infant:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+@import "tailwindcss";
+@import "./styles/tokens.css";
+@import "./styles/components.css";
+
+@theme {
+  --color-background: var(--color-ivory);
+  --color-surface: var(--color-white);
+  --color-cta: var(--color-gold);
+  --color-cta-hover: var(--color-gold-hover);
+  --color-primary: var(--color-purple);
+  --color-primary-light: var(--color-purple-light);
+  --color-text: var(--color-text-primary);
+  --color-text-muted: var(--color-text-muted);
+  --font-script: var(--font-great-vibes);
+  --font-serif: var(--font-cormorant);
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-serif);
+}

@@ -1,0 +1,101 @@
+/* ponytail: component classes Tailwind can't express in a single utility */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-glass);
+  border: 1px solid rgba(202, 138, 4, 0.15);
+  padding: 1.5rem;
+  transition: box-shadow 200ms ease;
+  cursor: default;
+}
+
+.glass-card:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.btn-primary {
+  background: var(--color-gold);
+  color: var(--color-white);
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-family: var(--font-cormorant);
+  font-weight: 600;
+  font-size: 1.125rem;
+  cursor: pointer;
+  border: none;
+  transition: all 200ms ease;
+}
+
+.btn-primary:hover {
+  background: var(--color-gold-hover);
+  transform: translateY(-1px);
+}
+
+.btn-primary:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+.btn-cta {
+  background: var(--color-gold);
+  color: var(--color-white);
+  padding: 1rem 2.5rem;
+  border-radius: 9999px;
+  font-family: var(--font-cormorant);
+  font-weight: 700;
+  font-size: 1.25rem;
+  cursor: pointer;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 200ms ease;
+  text-decoration: none;
+}
+
+.btn-cta:hover {
+  background: var(--color-gold-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-cta:focus-visible {
+  outline: 3px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+.gold-divider {
+  width: 6rem;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent);
+  margin: 2rem auto;
+}
+
+.section-padding {
+  padding: 5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.copyable {
+  cursor: pointer;
+  transition: color 200ms ease;
+}
+
+.copyable:hover {
+  color: var(--color-gold);
+}
+
+/* ponytail: scroll-margin for sticky nav + scroll snap */
+section[id] {
+  scroll-margin-top: 5rem;
+  scroll-snap-align: start;
+}
